@@ -1,25 +1,18 @@
 class EbooksController < ApplicationController
   before_action :set_ebook, only: %i[ show edit update destroy ]
 
-  # GET /ebooks or /ebooks.json
   def index
     @ebooks = Ebook.all
   end
 
-  # GET /ebooks/1 or /ebooks/1.json
-  def show
-  end
+  def show; end
 
-  # GET /ebooks/new
   def new
     @ebook = Ebook.new
   end
 
-  # GET /ebooks/1/edit
-  def edit
-  end
+  def edit; end
 
-  # POST /ebooks or /ebooks.json
   def create
     @ebook = Ebook.new(ebook_params)
 
@@ -34,7 +27,6 @@ class EbooksController < ApplicationController
     end
   end
 
-  # PATCH/PUT /ebooks/1 or /ebooks/1.json
   def update
     if @ebook.update(ebook_params)
       redirect_to @ebook, notice: "Ebook was successfully updated."
@@ -43,7 +35,6 @@ class EbooksController < ApplicationController
     end
   end
 
-  # DELETE /ebooks/1 or /ebooks/1.json
   def destroy
     @ebook.destroy!
 
@@ -51,12 +42,10 @@ class EbooksController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_ebook
       @ebook = Ebook.find(params[:id])
     end
 
-    # Only allow a list of trusted parameters through.
     def ebook_params
       params.require(:ebook).permit(:title, :description, :author, :isbn, :price)
     end

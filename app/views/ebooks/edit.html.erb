@@ -1,0 +1,12 @@
+<% content_for :title, "Editing ebook" %>
+
+<h1 class="page-title">Editing ebook</h1>
+
+<%= render "form", ebook: @ebook %>
+
+<br>
+
+<div>
+  <%= link_to "Show this ebook", @ebook, class: "btn-primary" %>
+  <%= link_to "Back to ebooks", ebooks_path, class: "btn-secondary"  %>
+</div>

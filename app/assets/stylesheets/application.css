@@ -1,6 +1,5 @@
 /* application.css */
 
-/* Resetando margens e padding para garantir consistência */
 * {
     margin: 0;
     padding: 0;
@@ -52,7 +51,7 @@ body {
 }
 
 .menu-item.active {
-    color: #1d4ed8; /* Cor para o item ativo */
+    color: #1d4ed8;
 }
 
 .user-email {
@@ -70,39 +69,284 @@ body {
     text-decoration: underline;
 }
 
-/* Estilos para o conteúdo principal */
 main {
-    /*display: flex;*/
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: flex-start; /* Alinha o conteúdo no topo */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     padding: 20px;
 }
 
 main > .content-wrapper {
-    width: 70%; /* Limita a largura a 70% da tela */
-    max-width: 1200px; /* Define um limite máximo de largura */
-    margin: 0 auto; /* Centraliza o conteúdo */
-    background-color: white; /* Dá fundo branco ao conteúdo */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra para destacar */
-    padding: 20px; /* Adiciona padding interno */
-    border-radius: 8px; /* Bordas arredondadas */
+    width: 70%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
 }
 
-/* Estilos específicos para h1 e p */
 h1, p {
-    display: block;  /* Garante que ambos se comportem como blocos */
-    margin-bottom: 1rem; /* Espaçamento entre os elementos */
+    display: block;
+    margin-bottom: 1rem;
 }
 
-/* Adicional: Estilo para o título */
 h1 {
-    font-size: 2rem;  /* Ajuste de tamanho do título */
+    font-size: 2rem;
     font-weight: bold;
-    color: #333;  /* Cor do título */
+    color: #333;
 }
 
-/* Estilo para o parágrafo */
 p {
-    font-size: 1rem;  /* Ajuste de tamanho do texto do parágrafo */
-    color: #555;  /* Cor do texto do parágrafo */
+    font-size: 1rem;
+    color: #555;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table-header {
+    padding: 12px 16px;
+    background-color: #f3f4f6;
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: #4b5563;
+    text-transform: uppercase;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.table-row {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.table-cell {
+    padding: 12px 16px;
+    color: #4b5563;
+    font-size: 0.875rem;
+}
+
+.table-cell:nth-child(1) {
+    font-weight: bold;
+}
+
+.link-action {
+    color: #2563eb;
+}
+
+.link-action:hover {
+    color: #1d4ed8;
+}
+
+.link-delete {
+    color: #dc2626;
+}
+
+.link-delete:hover {
+    color: #b91c1c;
+}
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination a {
+    padding: 8px 16px;
+    margin: 0 4px;
+    background-color: #f3f4f6;
+    color: #4b5563;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.pagination a:hover {
+    background-color: #2563eb;
+    color: white;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.4);
+}
+
+.btn-primary:active {
+    background-color: #1e40af;
+}
+
+.btn-secondary {
+    padding: 10px 20px;
+    background-color: #f3f4f6;
+    color: #4b5563;
+    font-size: 0.875rem;
+    font-weight: bold;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #e5e7eb;
+}
+
+.btn-secondary:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(229, 231, 235, 0.4);
+}
+
+.btn-secondary:active {
+    background-color: #d1d5db;
+}
+
+.btn-success {
+    padding: 10px 20px;
+    background-color: #10b981;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #059669;
+}
+
+.btn-success:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.4);
+}
+
+.btn-success:active {
+    background-color: #047857;
+}
+
+.btn-danger {
+    padding: 10px 20px;
+    background-color: #dc2626;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #b91c1c;
+}
+
+.btn-danger:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.4);
+}
+
+.btn-danger:active {
+    background-color: #991b1b;
+}
+
+.btn-dark {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-dark:hover {
+    background-color: #1f1f1f;
+}
+
+.btn-dark:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.4);
+}
+
+.btn-dark:active {
+    background-color: #111111;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.form-container {
+    width: 50%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container select,
+.form-container button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-container button {
+    background-color: #2563eb;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #1d4ed8;
+}
+
+.page-title {
+    text-align: center;
 }

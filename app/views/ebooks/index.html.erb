@@ -1,0 +1,37 @@
+<p class="notice"><%= notice %></p>
+
+<% content_for :title, "Ebooks" %>
+
+<h1>Ebooks</h1>
+
+<%= link_to "New ebook", new_ebook_path, class: "btn-primary" %>
+
+<div class="table-container">
+  <table class="table">
+    <thead>
+    <tr>
+      <th class="table-header">ID</th>
+      <th class="table-header">Title</th>
+      <th class="table-header">Author</th>
+      <th class="table-header">Price</th>
+      <th class="table-header">Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% @ebooks.each do |ebook| %>
+      <tr class="table-row">
+        <td class="table-cell"><%= ebook.id %></td>
+        <td class="table-cell"><%= ebook.title %></td>
+        <td class="table-cell"><%= ebook.author %></td>
+        <td class="table-cell"><%= ebook.price %></td>
+        <td class="table-cell">
+          <%= link_to "Show", ebook_path(ebook), class: "link-action" %> |
+          <%= link_to "Edit", edit_ebook_path(ebook), class: "link-action" %> |
+          <%= link_to "Delete", ebook_path(ebook), data: { turbo_method: "delete", turbo_confirm: "Are you sure?" }, class: "link-delete" %>
+        </td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>
+

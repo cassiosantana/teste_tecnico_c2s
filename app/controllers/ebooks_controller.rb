@@ -16,14 +16,10 @@ class EbooksController < ApplicationController
   def create
     @ebook = Ebook.new(ebook_params)
 
-    respond_to do |format|
-      if @ebook.save
-        format.html { redirect_to @ebook, notice: "Ebook was successfully created." }
-        format.json { render :show, status: :created, location: @ebook }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @ebook.errors, status: :unprocessable_entity }
-      end
+    if @ebook.save
+      redirect_to @ebook, notice: "Ebook was successfully created."
+    else
+      render :new, status: :unprocessable_entity
     end
   end
 

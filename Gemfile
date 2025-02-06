@@ -14,8 +14,9 @@ gem "bootsnap", require: false
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
   gem "brakeman", require: false
+  gem "ffaker"
   gem "rubocop-rails-omakase", require: false
-  gem 'rspec-rails', '~> 7.0.0'
+  gem "rspec-rails", "~> 7.0.0"
 end
 
 group :development do

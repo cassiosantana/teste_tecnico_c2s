@@ -1,15 +1,108 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+/* application.css */
+
+/* Resetando margens e padding para garantir consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f4f6;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #f3f4f6;
+    padding: 16px 0;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.menu-item {
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: #4b5563;
+}
+
+.menu-item:hover {
+    color: #2563eb;
+}
+
+.menu-item.active {
+    color: #1d4ed8; /* Cor para o item ativo */
+}
+
+.user-email {
+    font-size: 0.875rem;
+    color: #4b5563;
+}
+
+.link {
+    font-size: 0.875rem;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    /*display: flex;*/
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: flex-start; /* Alinha o conteúdo no topo */
+    padding: 20px;
+}
+
+main > .content-wrapper {
+    width: 70%; /* Limita a largura a 70% da tela */
+    max-width: 1200px; /* Define um limite máximo de largura */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    background-color: white; /* Dá fundo branco ao conteúdo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra para destacar */
+    padding: 20px; /* Adiciona padding interno */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Estilos específicos para h1 e p */
+h1, p {
+    display: block;  /* Garante que ambos se comportem como blocos */
+    margin-bottom: 1rem; /* Espaçamento entre os elementos */
+}
+
+/* Adicional: Estilo para o título */
+h1 {
+    font-size: 2rem;  /* Ajuste de tamanho do título */
+    font-weight: bold;
+    color: #333;  /* Cor do título */
+}
+
+/* Estilo para o parágrafo */
+p {
+    font-size: 1rem;  /* Ajuste de tamanho do texto do parágrafo */
+    color: #555;  /* Cor do texto do parágrafo */
+}

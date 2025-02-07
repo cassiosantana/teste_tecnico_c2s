@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  require "sidekiq/web"
+
   resources :ebooks
 
   namespace :api do
@@ -8,4 +10,6 @@ Rails.application.routes.draw do
   end
 
   root "home#index"
+
+  mount Sidekiq::Web => "/sidekiq"
 end

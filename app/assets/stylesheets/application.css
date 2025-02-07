@@ -350,3 +350,62 @@ p {
 .page-title {
     text-align: center;
 }
+
+.import-container {
+    max-width: 32rem;
+    width: 66.66%;
+    margin: 2rem auto 0;
+    padding: 1.5rem;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+
+.import-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1f2937;
+}
+
+.import-description {
+    margin-bottom: 1.5rem;
+    color: #4b5563;
+}
+
+.import-button-container {
+    text-align: right;
+}
+
+.import-form-group {
+    margin-bottom: 1rem;
+}
+
+.import-form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #1f2937;
+}
+
+.import-form-input {
+    display: block;
+    width: 100%;
+    font-size: 0.875rem;
+    color: #1f2937;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: #f9fafb;
+    padding: 0.5rem;
+}
+
+.import-form-input:focus {
+    outline: none;
+}
+
+.import-form-container {
+    display: flex;
+    justify-content: flex-start;
+}

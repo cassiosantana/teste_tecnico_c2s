@@ -37,6 +37,19 @@ class EbooksController < ApplicationController
     redirect_to ebooks_path, status: :see_other, notice: "Ebook was successfully destroyed."
   end
 
+  def import; end
+
+  def import_csv
+    if params[:csv_file].present?
+      csv_path = Ebooks::CsvUploaderService.call(params[:csv_file])
+      Ebooks::ImportCsvJob.perform_async(csv_path)
+
+      redirect_to ebooks_path, notice: "CSV file is being imported."
+    else
+      redirect_to import_ebooks_path, notice: "Please select a CSV file."
+    end
+  end
+
   private
     def set_ebook
       @ebook = Ebook.find(params[:id])

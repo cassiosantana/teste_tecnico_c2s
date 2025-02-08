@@ -97,6 +97,17 @@ h1 {
     color: #333;
 }
 
+h2, p {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
 p {
     font-size: 1rem;
     color: #555;
@@ -409,3 +420,37 @@ p {
     display: flex;
     justify-content: flex-start;
 }
+
+.notice {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #c3e6cb;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.alert {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #f5c6cb;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.checkbox-field {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.checkbox-field input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+

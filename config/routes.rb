@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   require "sidekiq/web"
 
+  devise_for :users
+
   resources :ebooks do
     collection do
       get "import"
@@ -17,4 +19,5 @@ Rails.application.routes.draw do
   root "home#index"
 
   mount Sidekiq::Web => "/sidekiq"
+  mount LetterOpenerWeb::Engine, at: "/letter_opener"
 end

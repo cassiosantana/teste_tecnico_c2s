@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   require "sidekiq/web"
 
+  devise_for :users
+
   resources :ebooks do
     collection do
       get "import"

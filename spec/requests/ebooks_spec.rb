@@ -1,12 +1,7 @@
-require "rails_helper"
+require 'rails_helper'
 
 RSpec.describe "/ebooks", type: :request do
-  let!(:user) { User.create!(email: "user@example.com", password: "password", password_confirmation: "password") }
   let!(:ebook) { Ebook.create!(title: "Test Title", author: "Test Author") }
-
-  before do
-    sign_in user
-  end
 
   describe "GET /index" do
     it "renders a successful response" do

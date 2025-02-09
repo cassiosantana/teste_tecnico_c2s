@@ -1,4 +1,3 @@
-# spec/requests/scraping_spec.rb
 require "rails_helper"
 
 RSpec.describe "Scraping", type: :request do

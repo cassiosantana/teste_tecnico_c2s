@@ -6,7 +6,6 @@ RSpec.describe "Api::V1::Ebooks", type: :request do
     Ebook.create(
       title: FFaker::Book.title,
       description: FFaker::Book.description,
-      author: FFaker::Name.name,
       isbn: FFaker::Book.isbn,
       price: FFaker::Random.rand(1.0..100.0)
     )
@@ -16,7 +15,6 @@ RSpec.describe "Api::V1::Ebooks", type: :request do
     {
       title: FFaker::Book.title,
       description: FFaker::Book.description,
-      author: FFaker::Name.name,
       isbn: FFaker::Book.isbn,
       price: FFaker::Random.rand(1.0..100.0)
     }

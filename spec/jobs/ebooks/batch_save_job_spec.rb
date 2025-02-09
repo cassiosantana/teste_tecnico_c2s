@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe Ebooks::BatchSaveJob, type: :job do
-  let(:batch) { [ { title: "Test Book", author: "John Doe" } ] }
+  let(:batch) { [ { title: "Test Book" } ] }
   let(:creator_service) { class_double(Ebooks::CreatorService, call: true) }
 
   it "call creator_service with an ebook batch" do

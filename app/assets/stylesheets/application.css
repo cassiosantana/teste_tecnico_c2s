@@ -454,3 +454,19 @@ p {
     padding: 0;
 }
 
+.informative {
+    text-align: center;
+    margin: 20px 0;
+    color: #d9534f;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.informative a {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+.informative a:hover {
+    text-decoration: underline;
+}

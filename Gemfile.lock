@@ -116,6 +116,10 @@ GEM
     ffaker (2.24.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
+    httparty (0.22.0)
+      csv
+      mini_mime (>= 1.0.0)
+      multi_xml (>= 0.5.2)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
     importmap-rails (2.1.0)
@@ -157,6 +161,8 @@ GEM
     mini_mime (1.1.5)
     minitest (5.25.4)
     msgpack (1.8.0)
+    multi_xml (0.7.1)
+      bigdecimal (~> 3.1)
     net-imap (0.5.5)
       date
       net-protocol
@@ -367,10 +373,12 @@ DEPENDENCIES
   debug
   devise
   ffaker
+  httparty
   importmap-rails
   jbuilder
   letter_opener
   letter_opener_web
+  nokogiri
   pg (~> 1.1)
   puma (>= 5.0)
   rails (~> 7.2.2, >= 7.2.2.1)

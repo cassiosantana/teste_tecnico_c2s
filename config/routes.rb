@@ -16,6 +16,9 @@ Rails.application.routes.draw do
     end
   end
 
+  get "/scraping/search", to: "scraping#search", as: "search_scraping"
+  post "/scraping/pull_book_info", to: "scraping#pull_book_info", as: "pull_book_info_scraping"
+
   root "home#index"
 
   mount Sidekiq::Web => "/sidekiq"

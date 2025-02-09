@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe "/ebooks", type: :request do
   let!(:user) { User.create!(email: "user@example.com", password: "password", password_confirmation: "password") }
-  let!(:ebook) { Ebook.create!(title: "Test Title", author: "Test Author") }
+  let!(:ebook) { Ebook.create!(title: "Test Title") }
 
   before do
     sign_in user
@@ -39,7 +39,7 @@ RSpec.describe "/ebooks", type: :request do
   describe "POST /create" do
     it "creates a new Ebook and redirects to it" do
       expect {
-        post ebooks_url, params: { ebook: { title: "New Title", author: "New Author" } }
+        post ebooks_url, params: { ebook: { title: "New Title" } }
       }.to change(Ebook, :count).by(1)
       expect(response).to redirect_to(ebook_url(Ebook.last))
     end

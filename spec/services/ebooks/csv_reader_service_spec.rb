@@ -10,18 +10,16 @@ RSpec.describe Ebooks::CsvReaderService do
 
       expected_result = [
         {
-          "title" => "Planet of the Ultra Demon",
-          "description" => "Dignissimos minima veniam optio quasi odit possimus ullam. Numquam minus id odio ea sequi esse. Quos exercitationem labore ipsa aut.",
-          "author" => "Ute Nienow",
-          "isbn" => "1019462146",
-          "price" => "909.9"
+          "title" => "Season of the Killer Mutant",
+          "description" => "Quibusdam non deserunt ex eius autem consectetur. Velit optio facilis animi itaque impedit. Soluta veniam sint nesciunt ipsa architecto quaerat pariatur qui. Totam sapiente delectus assumenda dolores iste consequuntur. Debitis vero ad culpa asperiores id cupiditate.",
+          "isbn" => "7080767980",
+          "price" => "213.2"
         },
         {
-          "title" => "Day of the Flying Cousins",
-          "description" => "Distinctio suscipit eligendi iure ipsam dicta odit. Voluptate mollitia laudantium consectetur nam iusto velit. Fugit et quasi veritatis voluptatem iusto facere architecto minus. Error accusantium non minus optio.",
-          "author" => "Dorris Sporer",
-          "isbn" => "1163075717",
-          "price" => "605.0"
+          "title" => "The Forbidden Man",
+          "description" => "Reiciendis libero occaecati quaerat aliquam aspernatur fugiat placeat eos. Nam consectetur officiis doloremque aspernatur laudantium tempora nemo. Natus quod culpa quaerat earum iusto. Accusamus architecto iste magnam quis consectetur doloribus.",
+          "isbn" => "17222025436",
+          "price" => "383.6"
         }
       ]
 

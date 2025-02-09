@@ -10,14 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2025_02_08_174621) do
+ActiveRecord::Schema[7.2].define(version: 2025_02_09_142918) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "ebooks", force: :cascade do |t|
     t.string "title"
     t.text "description"
-    t.string "author"
     t.string "isbn"
     t.decimal "price"
     t.datetime "created_at", null: false

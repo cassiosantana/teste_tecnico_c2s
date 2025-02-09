@@ -41,7 +41,7 @@ module Api
       end
 
       def ebook_params
-        params.require(:ebook).permit(:title, :description, :author, :isbn, :price)
+        params.require(:ebook).permit(:title, :description, :isbn, :price)
       end
     end
   end

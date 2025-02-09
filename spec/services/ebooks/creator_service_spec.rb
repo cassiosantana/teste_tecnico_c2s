@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe Ebooks::CreatorService do
   describe "#call" do
-    let(:ebook_collection) { [ { title: FFaker::Book.title, author: FFaker::Book.author } ] }
+    let(:ebook_collection) { [ { title: FFaker::Book.title } ] }
 
     it "insert ebooks in the database" do
       expect { described_class.call(ebook_collection) }

@@ -1,0 +1,24 @@
+<nav class="navbar">
+  <div class="navbar-container">
+    <a href="#" class="logo">Ebook Hub</a>
+    <ul class="menu">
+      <% if user_signed_in? %>
+        <li><span class="user-email"><%= current_user.email %></span></li>
+        <li><%= link_to "Edit Profile", edit_user_registration_path, class: "link" %></li>
+        <li><%= link_to "Logout", destroy_user_session_path, data: { turbo_method: :delete }, class: "link" %></li>
+      <% else %>
+        <li><%= link_to "Login", new_user_session_path, class: "link" %></li>
+        <li><%= link_to "Sign Up", new_user_registration_path, class: "link" %></li>
+      <% end %>
+    </ul>
+  </div>
+</nav>
+
+<nav class="navbar">
+  <div class="navbar-container">
+    <ul class="menu">
+      <li><%= link_to "Home", root_path, class: "menu-item active" %></li>
+      <li><%= link_to "Ebooks", ebooks_path, class: "menu-item" %></li>
+    </ul>
+  </div>
+</nav>

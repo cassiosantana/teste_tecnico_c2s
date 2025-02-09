@@ -1,0 +1,4 @@
+:concurrency: 5
+:queues:
+  - [ "batch_save", "2" ]
+  - default

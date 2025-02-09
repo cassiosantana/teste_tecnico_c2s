@@ -1,0 +1,9 @@
+<%= form_with url: import_csv_ebooks_path, method: :post, local: true, html: { multipart: true } do |form| %>
+  <div class="import-form-group">
+    <label class="import-form-label" for="file_input">Upload file</label>
+    <%= form.file_field :csv_file, class: "import-form-input", id: "file_input" %>
+  </div>
+  <div class="import-form-container">
+    <%= form.submit "Import CSV", class: "btn-primary" %>
+  </div>
+<% end %>

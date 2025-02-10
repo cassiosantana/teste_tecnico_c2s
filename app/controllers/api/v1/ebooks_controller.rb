@@ -1,6 +1,6 @@
 module Api
   module V1
-    class EbooksController < ApplicationController
+    class EbooksController <  Api::ApplicationController
       before_action :set_ebook, only: [ :show, :update, :destroy ]
 
       def index

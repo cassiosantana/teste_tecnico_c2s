@@ -34,7 +34,8 @@
                         "type": "string"
                       },
                       "price": {
-                        "type": "number"
+                        "type": "string",
+                        "format": "decimal"
                       }
                     },
                     "required": [
@@ -133,7 +134,8 @@
                       "type": "string"
                     },
                     "price": {
-                      "type": "number"
+                      "type": "string",
+                      "format": "decimal"
                     }
                   },
                   "required": [

@@ -1,4 +1,3 @@
-# spec/integration/ebooks_spec.rb
 require "swagger_helper"
 
 describe "Ebooks API" do

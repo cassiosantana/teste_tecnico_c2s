@@ -18,14 +18,14 @@ O eBook Hub funciona como um catálogo de recomendação da universidade, centra
 A importação de dados via CSV ocorre de forma assíncrona utilizando Sidekiq, garantindo melhor desempenho e escalabilidade.
 
 
-## Autenticação
+### Autenticação
 - MVC (Autenticação de Usuários): É necessário estar autenticado para acessar qualquer funcionalidade relacionada a eBooks.
 - API: A API não possui autenticação implementada no momento.
 
-## Documentação da API
+### Documentação da API
 A documentação da API está disponível via Swagger: http://localhost:3000/api-docs. Aqui você encontrará todas as rotas da API disponíveis.
 
-## Requisitos
+### Requisitos
 
 - **Ruby** 3.3.5 (linguagem de programação usada)
 - **Rails** 7.2.2.1 (framework web usado)
@@ -33,6 +33,17 @@ A documentação da API está disponível via Swagger: http://localhost:3000/api
 
 ## Instalação
 
+### Instalação com Docker (recomendado)
+O Docker facilita a configuração do ambiente de desenvolvimento, evitando problemas com dependências e configurações locais. Para rodar a aplicação com Docker:
+
+1. **Construa as imagens e inicie os containers:**
+    ```bash
+    docker-compose up --build
+    ```
+2. **Acesse a aplicação:** http://localhost:3000
+
+
+### Instalação sem Docker
 1. **Instale as dependências:**
 
     ```bash
@@ -57,17 +68,18 @@ A documentação da API está disponível via Swagger: http://localhost:3000/api
     rails server
     ```
 5. **Acesse a aplicação:** http://localhost:3000
-## Testes
 
-1. **Para rodar os testes, execute:**
+### Testes
+
+**Para rodar os testes, execute:**
 
     ```bash
         rspec
     ```
-## Contribuição
+### Contribuição
 Se você deseja contribuir para o projeto, sinta-se à vontade para abrir um PR com suas melhorias e correções. Suas contribuições são bem-vindas!
 
-## Licença
+### Licença
 
 Este projeto está licenciado sob a [MIT License](LICENSE).
 

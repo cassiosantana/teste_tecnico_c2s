@@ -9,11 +9,11 @@ O eBook Hub funciona como um catálogo de recomendação da universidade, centra
 
 ## Sobre o Projeto
 
-- CRUD de eBooks (cadastro, edição, exclusão e consulta)
-- Importação de eBooks via CSV com processamento assíncrono via Sidekiq
-- Web Scraping para cadastro rápido de eBooks pelo site Books to Scrape
-- Autenticação de Usuários na interface web
-- API documentada com Swagger para operações básicas de eBooks
+- CRUD de eBooks (cadastro, edição, exclusão e consulta).
+- Importação de eBooks via CSV com processamento assíncrono via Sidekiq.
+- Web Scraping para cadastro rápido de eBooks pelo site Books to Scrape.
+- Autenticação de Usuários na interface web.
+- API documentada com Swagger para operações básicas de eBooks.
 
 A importação de dados via CSV ocorre de forma assíncrona utilizando Sidekiq, garantindo melhor desempenho e escalabilidade.
 
@@ -27,9 +27,9 @@ A documentação da API está disponível via Swagger: http://localhost:3000/api
 
 ### Requisitos
 
-- **Ruby** 3.3.5 (linguagem de programação usada)
-- **Rails** 7.2.2.1 (framework web usado)
-- **PostgreSQL** 16 (banco de dados usado)
+- **Ruby** 3.3.5 (linguagem de programação usada).
+- **Rails** 7.2.2.1 (framework web usado).
+- **PostgreSQL** 16 (banco de dados usado).
 
 ## Instalação
 
@@ -40,7 +40,7 @@ O Docker facilita a configuração do ambiente de desenvolvimento, evitando prob
     ```bash
     docker-compose up --build
     ```
-2. **Acesse a aplicação:** http://localhost:3000
+2. **Acesse a aplicação:** http://localhost:3000.
 
 
 ### Instalação sem Docker
@@ -67,15 +67,15 @@ O Docker facilita a configuração do ambiente de desenvolvimento, evitando prob
     ```bash
     rails server
     ```
-5. **Acesse a aplicação:** http://localhost:3000
+5. **Acesse a aplicação:** http://localhost:3000.
 
 ### Testes
 
 **Para rodar os testes, execute:**
 
-    ```bash
-        rspec
-    ```
+ ```bash
+     rspec
+ ```
 ### Contribuição
 Se você deseja contribuir para o projeto, sinta-se à vontade para abrir um PR com suas melhorias e correções. Suas contribuições são bem-vindas!
 
